@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Annual Music Festival</h1>
+    <nav>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#venue">Venue</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="schedule" class="event-schedule">
+        <h2>Event Schedule</h2>
+        <div class="schedule-item">
+            <strong>10:00 AM</strong> - Opening Ceremony
+        </div>
+        <div class="schedule-item">
+            <strong>11:00 AM</strong> - Keynote Speech by A.R. Rahman
+        </div>
+        <div class="schedule-item">
+            <strong>1:00 PM</strong> - Lunch Break
+        </div>
+        <div class="schedule-item">
+            <strong>2:00 PM</strong> - Panel Discussion: The Future of Music
+        </div>
+        <div class="schedule-item">
+            <strong>4:00 PM</strong> - Live Performance by The Band
+        </div>
+    </section>
+
+    <section id="speakers" class="speakers">
+        <h2>Speakers</h2>
+        <div class="speaker-card" onclick="toggleBio('rahmanBio')">
+            <h3>A.R. Rahman</h3>
+            <div id="rahmanBio" class="speaker-bio">
+                A.R. Rahman is a renowned musician and speaker known for his insights on the music industry.
+            </div>
+        </div>
+        <div class="speaker-card" onclick="toggleBio('shankarBio')">
+            <h3>Shankar Mahadevan</h3>
+            <div id="shankarBio" class="speaker-bio">
+                Shankar Mahadevan is a music producer with over 20 years of experience in the industry.
+            </div>
+        </div>
+        <div class="speaker-card" onclick="toggleBio('krishnaBio')">
+            <h3>T.M. Krishna</h3>
+            <div id="krishnaBio" class="speaker-bio">
+                T.M. Krishna is a musicologist and author, passionate about music history.
+            </div>
+        </div>
+    </section>
+
+    <section id="venue" class="venue">
+        <h2>Venue Information</h2>
+        <p><strong>Location:</strong> S K Garden, Kolkata, West Bengal</p>
+        <p><strong>Date:</strong> September 30, 2024</p>
+        <p><strong>Address:</strong> Thakurpukur Nimtala More, Kalagachia Main Rd, Joka, Kolkata, West Bengal 700063</p>
+        <p>Join us for a day filled with music, networking, and fun!</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Annual Music Festival. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
